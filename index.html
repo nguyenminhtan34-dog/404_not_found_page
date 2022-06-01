@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Default page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        background: radial-gradient(circle, #f82a04b0, #fff);
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+      }
+
+      .hihihi-logo img {
+        width: 100%;
+        height: 100%;
+      }
+      .wrapper h1 {
+        font-size: 6rem;
+      }
+      .wrapper h1 .fas {
+        animation: animate1 3s linear infinite alternate;
+      }
+      .wrapper h1 .number {
+        animation: animate2 3s linear infinite alternate;
+      }
+      .wrapper .first-desc {
+        margin-top: 20px;
+        word-spacing: 5px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .wrapper .second-desc {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+      }
+      .hihihi-logo {
+        width: 110px;
+        height: 50px;
+        animation: animate3 3s linear infinite alternate;
+        position: absolute;
+        top: 0;
+      }
+
+      @keyframes animate1 {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes animate2 {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes animate3 {
+        0% {
+          opacity: 0.1;
+        }
+        100% {
+          opacity: 1;
+          top: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hihihi-logo">
+        <img src="/assets/image/hihihi-logo.png" alt="hihihi online" />
+      </div>
+      <h1>
+        <span class="number">4</span>
+        <i class="fas fa-cog"></i>
+        <span class="number">4</span>
+      </h1>
+      <p class="first-desc">Hmmm...! Không thể truy cập vào trang web này</p>
+      <p class="second-desc">
+        Xin lỗi, nhưng trang bạn đang tìm không tồn tại, đã bị xóa, thay đổi tên
+        hoặc tạm thời không có sẵn
+      </p>
+    </div>
+  </body>
+</html>
